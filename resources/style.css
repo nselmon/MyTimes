@@ -1,16 +1,16 @@
-.header {
+/* Header (fix alignment of nav) */
+.headercontainer {
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
   display: flex;
   padding: 5px;
   border-bottom: 1px solid black;
-  justify-content: flex-start;
 }
 
-.divnav {
+.headercontainer .divnav {
   display: flex;
-  align-items:  center;
+  align-items: center;
 }
 
  #logo {
@@ -18,18 +18,35 @@
   display: flex;
   padding-left: 5px;
   align-items: center;
-}
-
-.nav {
-  display: flex;
+  border: 1px solid black;
 }
 
 .navspan {
   padding: 15px;
   display:inline-block;
-
 }
 
 a {
   color: black;
+}
+/*Content*/
+.container{
+  display: flex;
+}
+.column {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+.column.large {
+  width: 630px;
+}
+.column.medium {
+  width: 300px;
+}
+.column.small {
+  width: 240px;
+}
+.story {
+  border: 1px solid black;
 }
